@@ -1,0 +1,222 @@
+body {
+  background-color: #2fad66;
+  text-align: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  user-select: none;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: left;
+  margin: 0 0 0 30px;
+  color: #0c4556;
+  width: fit-content;
+  font-size: 2.2em;
+}
+
+.telaAlterarSenha,
+.alterarNotas,
+.recuperarSenha {
+  text-align: center;
+  background-color: white;
+  border: 2px solid;
+  border-radius: 25px;
+  width: 70%;
+  height: 80%;
+  margin: auto;
+  margin-top: 5%;
+  display: inline-block;
+  padding: 20px;
+}
+
+.telaAlterarSenha input,
+.recuperarSenha input {
+  width: 200px;
+  margin-top: 10px;
+  background-color: #009da800;
+  border: 0.5px solid;
+}
+
+.telaAlterarSenha label,
+.alterarNotas label,
+.recuperarSenha label {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.recuperarSenha label {
+  margin-bottom: 80px;
+}
+
+.alterarNotas label p {
+  color: #0c4556;
+  text-align: left;
+}
+
+.alterarNotas input {
+  width: 100px;
+}
+
+.telaAlterarSenha form,
+.alterarNotas form,
+.recuperarSenha form {
+  margin-top: 15px;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 20px;
+  text-align: center;
+  padding: 35px 10px 50px 10px;
+  width: 350px;
+  height: 80%;
+}
+
+.telaAlterarSenha form p,
+.recuperarSenha form p {
+  color: #0c4556;
+  font-size: 1.05em;
+  margin: auto;
+  text-align: left;
+}
+
+.sair {
+  float: right;
+}
+
+.sair img {
+  width: 15px;
+  margin: 0 -5px 0 0;
+}
+
+.btFechar {
+  text-align: end;
+  margin-bottom: -25px;
+  margin-right: -10px;
+}
+
+.btFechar img {
+  width: 40px;
+}
+
+.telaImg {
+  display: inline-block;
+  border: 1px solid;
+  width: 50%;
+}
+
+.ilustra {
+  float: left;
+  width: 30%;
+  margin-right: 15%;
+  margin-left: 10%;
+  margin-top: 100px;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  background-color: transparent;
+}
+
+.gravar {
+  border: 1px solid black;
+  background-color: #0c4556fb;
+  color: white;
+  width: 200px;
+  height: 35px;
+}
+
+.recuperarSenha button {
+  margin-top: 50px;
+}
+
+.resultado {
+  display: none;
+}
+
+.notaNome {
+  border-bottom: 1px solid;
+  width: 250px;
+  margin: auto;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}
+
+.notaNome p:first-of-type {
+  color: #0c4556;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.notaNome p:last-of-type {
+  margin: 0;
+}
+
+/* ========================================================================================================= */
+
+@media screen and (max-width: 1180px) {
+  .ilustra {
+    display: none;
+  }
+
+  .telaAlterarSenha form,
+  .alterarNotas form,
+  .recuperarSenha form {
+    width: 300px;
+    height: 80%;
+    margin: auto;
+	margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+	body{
+		background-color: white;
+	}
+	
+	.telaAlterarSenha form,
+	.alterarNotas form,
+	.recuperarSenha form {
+		border: none;
+		background-color: white;
+	}
+	
+	.tituloSenha {
+    
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+    margin: auto;
+}
+	
+
+	
+	.telaAlterarSenha ,
+	.alterarNotas ,
+	.recuperarSenha  {
+		
+		background-color: white;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border: none;
+  }
+}

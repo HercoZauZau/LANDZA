@@ -1,0 +1,788 @@
+/* GERAL ============================================================*/
+
+:root {
+  --cor-primaria: #0c4556;
+  --cor-secundaria: #2fad66;
+  --cor-fundo: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  user-select: none;
+}
+
+.menuMobile{
+	display: none;
+}
+
+html,
+body {
+  /*overflow-y: hidden; */
+  height: 100%;
+}
+
+body {
+  display: flex;
+  background: #2d2d2d;
+}
+
+
+button{
+  cursor: pointer;
+}
+
+table{
+  display: inline-block;
+}
+
+
+/* MENU LATERAL ============================================================*/
+
+.navigation {
+  position: relative;
+  /* height: 600px; */
+  height: 100%;
+  background: #0c4556;
+  width: 70px;
+  box-sizing: content-box; 
+  box-shadow: 10px 0 0 var(--cor-fundo);
+  border-left: 10px solid #0c4556;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.perfil {
+  margin-bottom: 30px;
+  /* margin-left: 5px; */
+  font-weight: bold;
+}
+
+.nome {
+  color: var(--cor-fundo);
+  /* font-size: 1em; */
+  margin-left: 5px;
+}
+
+.perfil img {
+  border: 1.5px solid black;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+}
+
+
+
+.navigation:hover {
+  width: 350px;
+}
+
+.navigation ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 40px;
+}
+
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-bottom: 15px;
+}
+
+
+.navigation ul li:first-of-type {
+  margin-bottom: 25px;
+}
+
+
+.navigation ul li a {
+  position: relative;
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.navigation ul li a .icon img {
+  position: relative;
+  font-size: 1.5rem;
+  z-index: 1;
+  width: 25px;
+}
+
+.navigation ul li a .title {
+  position: relative;
+  display: block;
+  padding-left: 10px;
+  height: 60px;
+  line-height: 60px;
+  white-space: nowrap;
+}
+
+.prs{
+	display: none;
+}
+
+.active {
+  background: var(--cor-fundo);
+}
+
+.active a::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: #0c4556;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 var(--cor-fundo);
+}
+
+.active a::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: #0c4556;
+  border-radius: 50%;
+  box-shadow: 15px -15px 0 var(--cor-fundo);
+}
+
+
+/* TELA PRINCIPAL ============================================================*/
+
+.principal {
+  background-color: var(--cor-fundo);
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  /* text-align: end; */
+}
+
+
+.principal2 {
+  padding: 50px;
+  padding-top: 6%;
+  background-color: var(--cor-secundaria);
+  border-radius: 20px;
+  border: 3px solid var(--cor-primaria);
+  width: 60%;
+  height: 60%;
+  margin: auto;
+  /* margin-top: 5%; */
+}
+
+.principal2 button {
+  width: 30%;
+  height: 35px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btPrincipal{
+  min-width: 100px;
+}
+
+.principal2 button:last-of-type {
+  background-color: transparent;
+  border: 1.5px solid;
+}
+.principal2 button:first-of-type {
+  background-color: #0c4556;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.principal2 h1 {
+  color: var(--cor-primaria);
+  text-align: start;
+}
+.principal2 p {
+    color: white;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  display: inline-block;
+  text-align: justify;
+  margin-right: 20px;
+}
+
+.texto {
+  width: 50%;
+  margin: 0;
+  float: left;
+}
+
+.principal2 img {
+  width: 40%;
+  min-width: 200px;
+  float: right;
+}
+
+.logotela img{
+  width: 20%;
+  min-width: 250px;
+}
+
+.logotela{
+  background-color: var(--cor-secundaria);
+  text-align: center;
+  height: 20%;
+  border-radius: 0 0 0 20px;
+  padding-top: 5px;
+}
+
+.logo-branco{
+  background-color: white;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+
+
+
+/*TELA NOTIFICACOES ============================================================*/
+
+.notificacao{
+  background-color: var(--cor-secundaria);
+  margin-left: 15px;
+  border: 2px solid black;
+  border-radius: 100%;
+  color: white;
+  padding: 5px;
+  font-size: .7em;
+  display: none;
+}
+
+.tabela-notificacoes {
+	width: 40%;
+  float: right;
+  border: 1px solid;
+  padding: 5px;
+}
+
+.tabela-notificacoes article{
+	border: 1px solid;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.tabela-notificacoes article:last-of-type{
+
+  margin-bottom: 0;
+}
+
+.tabela-notificacoes article p:first-of-type{
+	font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tabela-notificacoes article p:last-of-type{
+	color:  #0c4556;
+	margin-top: 15px;
+  text-align: end;
+}
+
+.tela-notificacoes{
+  /* text-align: end; */
+  padding-top: 10px;
+  margin-top: 25px;
+  height: 66%;
+  padding-left: 25px;
+  border-radius: 20px 0 0 0;
+  border: 1px solid;
+}
+
+.scroll{
+  overflow-y: scroll;
+  overflow: scroll;
+  /* overflow-x: hidden; */
+}
+/* TELA PERFIL ============================================================ */
+
+
+
+.fotoDePerfil {
+  border-radius: 50%;
+  border: 2px solid;
+  background-color: black;
+  width: 300px;
+  margin-right: 100px;
+}
+
+.tela-perfil h1 {
+  font-size: 3em;
+  margin-bottom: 25px;
+  text-align: end;
+  color: #0c4556;
+}
+
+.alterar-senha{
+  height: 45px;
+  width: 120px;
+  border-radius: 25px;
+  padding: 10px;
+  position: relative;
+  top: -50%;
+  right: -5%;
+  background-color: #0c4556;
+  color: white;
+  border: none;
+}
+
+.dadosPerfil{
+  font-size: .9em;
+  font-family: sans-serif;
+  padding: 12px 15px 0 15px;
+  text-align: left;
+}
+
+.dadosPerfil p{
+	margin-bottom: 20px;
+}
+
+
+.dadosPerfil th p{
+	margin-right: 75px;
+}
+
+
+.divTab{
+	text-align: center;
+display: inline-block;
+width: fit-content;
+}
+
+.divTab h4{
+padding-bottom: 20px;
+width: 90%;
+font-weight: normal;
+margin: auto;
+margin-bottom: 15px;
+}
+
+.dadosPerfil tr:last-of-type p{
+	margin-bottom: 0;
+}
+
+.botaoAlterarSenha{
+text-align: right;
+}
+
+.botaoAlterarSenha a{
+  background-color: #2fad66;
+  border: 1px solid;
+  position: relative;
+  bottom: -60px;
+  width: 150px;
+  height: 35px;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+/* TABELA =============================================================== */
+
+
+
+.tabelaFinal{
+border-collapse: collapse;
+margin: 25px 0;
+font-size: .9em;
+font-family: sans-serif;
+min-width: 400px;
+box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+max-height: 90%;
+max-width: 58%;
+float: right;
+}
+
+
+
+.tabelaFinal thead tr{
+background-color: var(--cor-secundaria);
+color: #ffffff;
+text-align: left;
+}
+
+.tabelaFinal th, .tabelaFinal td{
+  padding: 12px 15px;
+  }
+
+.tabelaFinal tbody tr{
+  border-bottom: 1px solid #dddddd;
+}
+
+.tabelaFinal tbody tr:nth-of-type(even){
+background-color: #f3f3f3;
+/* font-weight: bold; */
+/* color: #009879; */
+}
+
+.tabelaFinal tbody tr:last-of-type{
+border-bottom: 2px solid var(--cor-secundaria);
+}
+
+
+.iconeOpcoes{
+	width: 15px;
+	margin-left: 15px;
+}
+
+
+/* TELA FINAL              ================================================ */
+
+.telaFinal{
+  border: 1px solid;
+  padding: 25px;
+  padding-right: 50px;
+  height: 75%;
+  width: 98%;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+
+.vetor-final h1 {
+  font-size: 2.5em;
+  color: #005243;
+  font-family: sans-serif;
+}
+
+.vetor-final{
+  width: 40%;
+  float: left;
+  text-align: start;
+}
+
+.vetor-final img{
+  width: 450px;
+}
+
+.disponiveis{
+	display: none;
+}
+
+.vazio{
+	
+	float: right;
+	width: 45%;
+	text-align: center;
+	display: none;
+}
+
+.vazio h1{
+	margin-top: 10px;
+	color: #005243;
+}
+
+.vazio img{
+	width: 100%;	
+}
+
+
+/* ANIMACAO ROLAR-DIREITA  ============================================================================ */
+
+/*
+
+.rolar-direita {
+	-webkit-animation: rolar-direita 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: rolar-direita 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes rolar-direita {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes rolar-direita {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+*/
+
+/* TABELA ALTERAR SENHA	  ============================================================================ */
+
+
+
+.senha label{
+            display: block;
+            margin-bottom: 50px;
+}
+
+.senha form{
+            border: 1px solid;
+            border-radius: 20px;
+            text-align: center;
+            padding: 15px;
+            width: 350px;
+            height: 400px;
+}
+
+
+/* RECUPERAR SENHA	  ============================================================================ */
+
+
+
+.senha label{
+            display: block;
+            margin-bottom: 50px;
+}
+
+.senha form{
+            border: 1px solid;
+            border-radius: 20px;
+            text-align: center;
+            padding: 15px;
+            width: 350px;
+            height: 400px;
+}
+
+
+/* ========================================================================================================= */
+
+@media screen and (max-width: 1150px){
+
+  .principal2 img {
+    display: none;
+  }
+
+  .texto{
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
+
+  .principal2 button:first-of-type{
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1250px){
+
+  .vetor-final img {
+    width: 350px;
+}
+}
+
+@media screen and (max-width: 1050px){
+
+  .vetor-final img {
+    display: none;
+}
+
+.tabelaFinal {
+  display: block;
+  width: 90%;
+  float: none;
+  margin: auto;
+}
+
+.telaFinal {
+  text-align: center;
+}
+}
+
+
+@media screen and (max-width: 900px){
+	
+.tela-perfil h1 {
+    text-align: center;
+}
+
+}
+
+@media screen and (max-width: 480px){
+
+ .vetor-final h1 {
+    font-size: 1em;
+}
+
+
+.telaFinal {
+  border: none;
+  padding: 0;
+  padding-right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.tabelaFinal {
+  border-collapse: collapse;
+  width: 100%;
+  max-height: 90%;
+  margin-left: 15px;
+}
+
+.logotela {
+ display: none;
+}
+
+.navigation {
+ display: none;
+ max-width: 75%;
+}
+
+/*PERFIL =======================================================================*/
+.fotoDePerfil {
+    width: 35%;
+    margin-bottom: 50px;
+    margin-right: 0; 
+}
+
+.botaoAlterarSenha {
+    text-align: center; 
+}
+
+.divTab h4 {
+    display: none;
+}
+
+.tela-perfil h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.menuMobile{
+	display: inherit;
+	width: 25px;
+	 /*float: right;*/
+	margin: auto;
+	margin-right: 25px;
+	 margin-top: 20px;
+	
+}
+
+
+/*MENU ========================================================================*/
+
+.active a::before , .active a::after {
+ display: none;
+}
+
+
+.navigation ul li {
+  text-align: center;
+  width: 95%;
+  border-radius: 20px;
+}
+
+.navigation ul li a .title {
+  height: 52px;
+  line-height: 52px;
+  font-size: 1.4em;
+}
+
+.navigation ul li a .icon {
+  top: 0px;
+}
+
+.perfil img {
+  margin-top: 0px;
+}
+
+/*NOTIFICACAO ==================================================================*/
+
+.tabela-notificacoes {
+    width: 80%;
+    float: none;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.tabela-notificacoes article p:first-of-type {
+    text-align: left;
+}
+
+/*GERAL ========================================================================*/
+
+.tituloPrincipal{
+	margin-top: 50px;
+}
+.principal {
+    width: 100%;
+    height: 100%;
+    padding-left: 0;
+}
+
+.principal2 {
+    width: 80%;
+    padding: 0;
+}
+
+   .logo-branco{
+   display: inherit;
+   }
+
+.principal2 p {
+    margin-right: 0;
+    margin-bottom: 80px;
+}
+
+.principal2 button {
+    width: 85px;
+    height: 35px;
+    border-radius: 20px;
+}
+
+.principal2 button:first-of-type {
+    margin-right: 25px;
+}
+
+.texto {
+    width: 80%;
+    margin: auto;
+    float: none;
+}
+
+html,
+body {
+  background-color: white;
+  overflow-y: hidden; 
+  
+}
+}

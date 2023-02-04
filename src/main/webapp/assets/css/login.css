@@ -1,0 +1,168 @@
+body {
+	background-color: #0c4556;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+* {
+	user-select: none;
+}
+
+html, body {
+	height: 100%;
+}
+
+.intro {
+	width: 50%;
+	display: inline-block;
+}
+
+.intro p:first-of-type {
+	font-size: 1.2em;
+	font-family: Georgia;
+	margin-top: 15%;
+	color: #2fad66;
+}
+
+.intro p:last-of-type {
+	font-family: Georgia;
+	color: #86d4a8;
+	margin: auto;
+	width: 50%;
+}
+
+.vetor {
+	width: 45%;
+	margin-top: 10%;
+}
+
+img {
+	width: 60%;
+}
+
+header {
+	padding: 50px;
+	box-sizing: border-box;
+	height: 100%;
+	width: 40%;
+	min-width: 400px;
+	background-color: #2fad66;
+	text-align: center;
+	float: right;
+}
+
+.msg {
+	color: darkslategray;
+	margin-top: 5%;
+	margin-bottom: 15%;
+}
+
+form {
+	width: 80%;
+	max-width: 340px;
+	margin: auto;
+}
+
+label {
+	color: #0a3f50;
+}
+
+label p {
+	text-align: start;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+input {
+	background-color: #2fad66;
+	border: none;
+	border-bottom: 2px solid #0a3f50;
+	width: 100%;
+	font-size: 1.2em;
+}
+
+input:-internal-autofill-selected {
+	background-color: #2fad66 !important;
+}
+
+input:focus {
+	box-shadow: 0 0 0 0;
+	outline: 0;
+}
+
+label:first-of-type input {
+	margin-bottom: 80px;
+}
+
+button {
+	display: block;
+	margin: auto;
+	width: 50%;
+	height: 40px;
+	margin-top: 75px;
+	margin-bottom: 10px;
+	padding: 5px;
+	border-radius: 20px;
+	border: none;
+	background-color: #0c4556;
+	color: white;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #0e7493;
+	border: 2px solid;
+	color: black;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+	text-align: end;
+	margin-top: 10px;
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 0.85em;
+}
+
+a:hover {
+	color: #0e7493;
+}
+
+h1 {
+	margin-top: 0;
+	margin-bottom: 20%;
+	font-family: cursive;
+	font-size: 3em;
+	color: black;
+	text-shadow: 2px 2px 2px #0b5a72;
+}
+
+.resultadoLogin {
+	display: none;
+	text-align: center;
+	color: white;
+	margin-top: -25px;
+	margin-bottom: 50px;
+}
+
+/* ========================================================================================================= */
+
+@media screen and (max-width: 800px){
+	body{
+		background-color: #2fad66;
+	}
+
+	.intro{
+		display: none;
+	}
+
+	header {
+		height: 100%;
+		width: 100%;
+		padding: 10px;
+		float: none;
+		min-width: 0;
+	}
+}
